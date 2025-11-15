@@ -1,0 +1,176 @@
+LIBRARY MANAGEMENT SYSTEM (OOP PYTHON PROJECT)
+==================================================
+
+1. PROJECT OVERVIEW
+--------------------
+A Library Management System (LMS) built in Python to learn OOP concepts from basic to advanced.  
+Users can borrow/return books, and admins can manage books and members.  
+Project grows in phases: basic → intermediate → advanced.
+
+--------------------------------------------------
+
+
+2. CORE FEATURES (PHASE-WISE)
+------------------------------
+
+PHASE 1 — BASIC OOP
+• Book class  
+• Member/User class  
+• Library class  
+• Add/list books
+
+PHASE 2 — INTERMEDIATE OOP
+• Borrow & return system  
+• Unique IDs for books & users  
+• Search and filter books  
+• Exception handling  
+• File-based storage (JSON)
+
+PHASE 3 — ADVANCED OOP
+• Abstract Base Classes (ABC)  
+• Admin inherits from Member  
+• Polymorphic methods  
+• Modules & packages  
+• Logging  
+• Role-based access
+
+
+--------------------------------------------------
+
+
+3. OOP CONCEPTS YOU WILL LEARN
+--------------------------------
+• Class & Objects  
+• Constructor  
+• Encapsulation (private variables)  
+• Inheritance  
+• Polymorphism  
+• Abstraction (ABC)  
+• Composition  
+• Static & Class methods  
+• Exception handling  
+• File handling (JSON)  
+• Modular programming (packages)
+
+
+--------------------------------------------------
+
+
+4. SYSTEM FLOWCHART (TEXT VERSION)
+-----------------------------------
+
+START SYSTEM
+    |
+    v
+Load Data (JSON/File)
+    |
+    +------------------------------+
+    |                              |
+    v                              v
+Login as Admin?            Login as Member/User?
+    |                              |
+    v                              v
+
+ADMIN MENU:                 MEMBER MENU:
+- Add Book                  - Search Book
+- Remove Book               - Borrow Book
+- View All Books            - Return Book
+- Manage Members            - My Borrowed Books
+    |                              |
+    v                              v
+
+Perform Operation          Perform Operation
+    |                              |
+    v                              v
+
+Save Updated Data          Save Updated Data
+    |
+    v
+
+Exit System
+
+
+--------------------------------------------------
+
+
+5. STEP-BY-STEP ROADMAP
+------------------------
+
+STAGE 1 — BASIC SETUP (Day 1–2)
+• Create classes: Book, Member, Library  
+• Basic attributes: title, author, availability  
+• Methods: add_book, list_books
+
+STAGE 2 — BORROW/RETURN LOGIC (Day 3–4)
+• Implement borrow_book()  
+• Implement return_book()  
+• Check availability  
+• Assign book to member
+
+STAGE 3 — FILE STORAGE (Day 4–5)
+• Use JSON to store:
+  - books.json
+  - members.json
+• Load/save data at program start/end
+
+STAGE 4 — ADMIN VS MEMBER (Day 6)
+• Create:
+  - class User(ABC)
+  - class Member(User)
+  - class Admin(Member)
+• Apply:
+  - inheritance  
+  - abstraction  
+  - polymorphism
+
+STAGE 5 — FULL MENU SYSTEM (Day 7)
+• Implement CLI menu for:
+  - Login
+  - Admin menu
+  - Member menu
+
+STAGE 6 — PROJECT PACKAGE STRUCTURE (Day 8–10)
+• Create folder structure:
+
+library_system/
+    models/
+        book.py
+        member.py
+        user.py
+    services/
+        library.py
+    data/
+        books.json
+        members.json
+    main.py
+
+
+--------------------------------------------------
+
+
+6. GITHUB WORKFLOW FOR THIS PROJECT
+------------------------------------
+
+STEP 1 — Initialize Repo
+git init  
+git add .  
+git commit -m "Initial commit: Basic classes"
+
+STEP 2 — Push to GitHub
+git branch -M main  
+git remote add origin <your-repo-url>  
+git push -u origin main
+
+STEP 3 — Use Branches for Features
+Examples:
+git checkout -b feature/borrow-return  
+git commit -m "Borrow/Return logic added"  
+git push -u origin feature/borrow-return
+
+Create pull requests for merging branches.
+
+
+--------------------------------------------------
+
+END OF DOCUMENT
+==================================================
