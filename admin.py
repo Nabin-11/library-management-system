@@ -1,7 +1,8 @@
 class admin_menu():
-    def add_book(self, book_title, book_id):
+    def __init__(self):
         self.title = []
         self.id = []
+    def add_book(self, book_title, book_id):
         self.title.append(book_title)
         self.id.append(book_id)
     def remove_book(self, book_id):
